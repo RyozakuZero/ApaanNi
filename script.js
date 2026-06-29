@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+    const popup = document.getElementById("letterPopup");
+    const btn = document.getElementById("letterBtn");
+    const closeBtn = document.querySelector(".close");
+
+    btn.addEventListener("click", () => {
+        popup.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        popup.classList.remove("show");
+    });
+
+    popup.addEventListener("click", (e) => {
+        if(e.target === popup){
+            popup.classList.remove("show");
+        }
+    });
+
+});
+
 function bukaHadiah(){
 
 document.getElementById("gallerySection").style.display="block";
