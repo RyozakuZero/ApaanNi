@@ -225,11 +225,21 @@ body{
 
 .typing{
 
-    background:linear-gradient(90deg,
-    #ffffff,
-    #ffe29a,
-    #ffb3d9,
-    #ffffff);
+    width:0;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    border-right:3px solid #ff4d88;
+
+    background:linear-gradient(
+        90deg,
+        #ff5d8f,
+        #ffb347,
+        #ffd700,
+        #ff5d8f
+    );
 
     background-size:300%;
 
@@ -237,12 +247,11 @@ body{
     -webkit-text-fill-color:transparent;
 
     animation:
-    typing 3s steps(18,end) forwards,
-    blink .7s infinite,
-    shimmer 5s linear infinite;
+        typing 3s steps(16,end) forwards,
+        blink .7s step-end infinite,
+        shimmer 5s linear infinite;
 
 }
-
 @keyframes shimmer{
 
     0%{
