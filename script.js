@@ -1,3 +1,17 @@
+function bukaHadiah(){
+
+document.getElementById("gallerySection").style.display="block";
+
+window.scrollTo({
+
+top:document.getElementById("gallerySection").offsetTop,
+
+behavior:"smooth"
+
+});
+
+}
+
 const balloons = document.querySelectorAll(".draggable");
 
 balloons.forEach(balloon => {
