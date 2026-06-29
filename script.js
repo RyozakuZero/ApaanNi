@@ -109,3 +109,17 @@ balloons.forEach(balloon => {
     });
 
 })
+
+const popup = document.getElementById("letterPopup");
+const btn = document.getElementById("letterBtn");
+const closeBtn = document.querySelector(".close");
+
+btn.onclick = () => popup.classList.add("show");
+
+closeBtn.onclick = () => popup.classList.remove("show");
+
+popup.onclick = (e) => {
+    if (e.target === popup) {
+        popup.classList.remove("show");
+    }
+};
